@@ -22,8 +22,7 @@
     "require-dev": {
         "phpunit/phpunit": "~3.0",
         "mockery/mockery": "0.9.*@dev",
-        "php-vcr/php-vcr": "dev-master",
-        "vlucas/phpdotenv": "dev-master"
+        "php-vcr/php-vcr": "dev-master"
     },
     "config": {
         "bin-dir": "bin/"
