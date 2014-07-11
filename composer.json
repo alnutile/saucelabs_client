@@ -23,7 +23,7 @@
         "phpunit/phpunit": "~3.0",
         "mockery/mockery": "0.9.*@dev",
         "php-vcr/php-vcr": "dev-master",
-        "php-vcr/phpunit-testlistener-vcr": "dev-master"
+        "vlucas/phpdotenv": "1.0.6"
     },
     "config": {
         "bin-dir": "bin/"
