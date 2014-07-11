@@ -21,3 +21,4 @@ and the library should allow you to make these requests to SauceLabs using your 
 Break out anything into interfaces that will help to make this easier to be a foundation to other
 automated testing services. As well as move those into their own composer libraries.
 
+## Travis
