@@ -21,6 +21,3 @@ and the library should allow you to make these requests to SauceLabs using your 
 Break out anything into interfaces that will help to make this easier to be a foundation to other
 automated testing services. As well as move those into their own composer libraries.
 
-## Travis
-
-@TODO setup travis to make dummy .env since all the valid info is not needed for the api calls but this file is
