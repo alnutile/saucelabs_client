@@ -1,9 +1,9 @@
 {
-    "name": "alnutile/REPO_NAME",
+    "name": "alnutile/saucelabs_client",
     "type": "library",
     "description": "Complete copy of php-github-api-master since it is such a good client for GithubAPI",
     "keywords": [],
-    "homepage": "https://github.com/alnutile/REPO_NAME",
+    "homepage": "https://github.com/alnutile/saucelabs_client",
     "license": "MIT",
     "authors": [
         {
