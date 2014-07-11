@@ -13,8 +13,9 @@ of these calls.
 
 ## Setup
 
-Just copy the env_example file to .env and put in your username and token. Then run composer install
-and the library should allow you to make these requests to SauceLabs using your username and token.
+Add it to your composer.json see https://packagist.org/packages/alnutile/saucelabs_client for updates to the settings.
+Then copy the env_example file to .env and put in your username and token. 
+Then run composer install and the library should allow you to make these requests to SauceLabs using your username and token.
 
 ## RoadMap
 
