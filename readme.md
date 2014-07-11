@@ -22,5 +22,4 @@ Break out anything into interfaces that will help to make this easier to be a fo
 automated testing services. As well as move those into their own composer libraries.
 
 ## Travis 
-
-[badge]
+[![Build Status](https://travis-ci.org/alnutile/saucelabs_client.svg?branch=master)](https://travis-ci.org/alnutile/saucelabs_client)
