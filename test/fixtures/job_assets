@@ -2,7 +2,7 @@
 -
     request:
         method: GET
-        url: 'https://saucelabs.com/rest/v1/api-test-user/activity'
+        url: 'https://saucelabs.com/rest/v1/api-test-user/jobs/1cde7b77e8744ff5b6198489ceffce81/assets'
         headers:
             Host: saucelabs.com
             Accept: application/vnd.SauceLabs.beta+json
@@ -13,16 +13,16 @@
         status: 200
         headers:
             Server: nginx
-            Date: 'Fri, 11 Jul 2014 10:36:38 GMT'
+            Date: 'Fri, 11 Jul 2014 12:43:57 GMT'
             Content-Type: application/json
             Transfer-Encoding: chunked
             Connection: keep-alive
             X-Backend: mix
-        body: "{\"subaccounts\": {\"api-test-user\": {\"in progress\": 0, \"all\": 0, \"queued\": 0}}, \"totals\": {\"in progress\": 0, \"all\": 0, \"queued\": 0}}\n"
+        body: "{\"sauce-log\": \"log.json\", \"video\": \"video.flv\", \"selenium-log\": \"selenium-server.log\", \"screenshots\": [\"0000screenshot.png\", \"0001screenshot.png\", \"0002screenshot.png\", \"0003screenshot.png\"]}\n"
 -
     request:
         method: GET
-        url: 'https://saucelabs.com/rest/v1/behat-seed/activity'
+        url: 'https://saucelabs.com/rest/v1/behat-seed/jobs/1cde7b77e8744ff5b6198489ceffce81/assets'
         headers:
             Host: saucelabs.com
             Accept: application/vnd.SauceLabs.beta+json
@@ -33,9 +33,9 @@
         status: 200
         headers:
             Server: nginx
-            Date: 'Fri, 11 Jul 2014 13:41:36 GMT'
+            Date: 'Fri, 11 Jul 2014 13:41:37 GMT'
             Content-Type: application/json
             Transfer-Encoding: chunked
             Connection: keep-alive
             X-Backend: mix
-        body: "{\"subaccounts\": {\"behat-seed\": {\"in progress\": 0, \"all\": 0, \"queued\": 0}}, \"totals\": {\"in progress\": 0, \"all\": 0, \"queued\": 0}}\n"
+        body: "{\"sauce-log\": \"log.json\", \"video\": \"video.flv\", \"selenium-log\": \"selenium-server.log\", \"screenshots\": [\"0000screenshot.png\", \"0001screenshot.png\", \"0002screenshot.png\", \"0003screenshot.png\"]}\n"

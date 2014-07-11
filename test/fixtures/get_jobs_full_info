@@ -1,0 +1,41 @@
+
+-
+    request:
+        method: GET
+        url: 'https://saucelabs.com/rest/v1/api-test-user/jobs?limit=3&full=true'
+        headers:
+            Host: saucelabs.com
+            Accept: application/vnd.SauceLabs.beta+json
+            User-Agent: 'php-github-api (http://github.com/alnutile/saucelabs_client)'
+            Authorization: 'Basic YmVoYXQtc2VlZDpmYzViNjg4YS1mMjdjLTRjNzMtYTkxNC1lYjVkN2UyY2RmMWU='
+            Content-Length: '0'
+    response:
+        status: 200
+        headers:
+            Server: nginx
+            Date: 'Fri, 11 Jul 2014 11:25:55 GMT'
+            Content-Type: 'application/json; charset=utf-8'
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            X-Backend: mix
+        body: '[{"browser_short_version": "26", "video_url": "https://assets.saucelabs.com/jobs/79bd34f42d584da6ad59c051388134d9/video.flv", "creation_time": 1400864176, "custom-data": null, "browser_version": "26.0.1410.43.", "owner": "api-test-user", "id": "79bd34f42d584da6ad59c051388134d9", "log_url": "https://assets.saucelabs.com/jobs/79bd34f42d584da6ad59c051388134d9/selenium-server.log", "build": null, "passed": null, "public": null, "status": "complete", "tags": [], "start_time": 1400864176, "proxied": false, "commands_not_successful": 2, "name": "Behat See", "end_time": 1400864188, "error": null, "os": "Windows 2012", "breakpointed": null, "browser": "googlechrome"}, {"browser_short_version": "26", "video_url": "https://assets.saucelabs.com/jobs/d75177a863ec4a458c7222813e10ee84/video.flv", "creation_time": 1400864096, "custom-data": null, "browser_version": "26.0.1410.43.", "owner": "api-test-user", "id": "d75177a863ec4a458c7222813e10ee84", "log_url": "https://assets.saucelabs.com/jobs/d75177a863ec4a458c7222813e10ee84/selenium-server.log", "build": null, "passed": null, "public": null, "status": "complete", "tags": [], "start_time": 1400864096, "proxied": false, "commands_not_successful": 2, "name": "Behat See", "end_time": 1400864106, "error": null, "os": "Windows 2012", "breakpointed": null, "browser": "googlechrome"}, {"browser_short_version": "26", "video_url": "https://assets.saucelabs.com/jobs/67591976001c4c5a9522b93281e0e8ef/video.flv", "creation_time": 1400863888, "custom-data": null, "browser_version": "26.0.1410.43.", "owner": "api-test-user", "id": "67591976001c4c5a9522b93281e0e8ef", "log_url": "https://assets.saucelabs.com/jobs/67591976001c4c5a9522b93281e0e8ef/selenium-server.log", "build": null, "passed": null, "public": null, "status": "complete", "tags": [], "start_time": 1400863888, "proxied": false, "commands_not_successful": 2, "name": "Behat See", "end_time": 1400863902, "error": null, "os": "Windows 2012", "breakpointed": null, "browser": "googlechrome"}]'
+-
+    request:
+        method: GET
+        url: 'https://saucelabs.com/rest/v1/behat-seed/jobs?limit=3&full=true'
+        headers:
+            Host: saucelabs.com
+            Accept: application/vnd.SauceLabs.beta+json
+            User-Agent: 'php-github-api (http://github.com/alnutile/saucelabs_client)'
+            Authorization: 'Basic YmVoYXQtc2VlZDpmYzViNjg4YS1mMjdjLTRjNzMtYTkxNC1lYjVkN2UyY2RmMWU='
+            Content-Length: '0'
+    response:
+        status: 200
+        headers:
+            Server: nginx
+            Date: 'Fri, 11 Jul 2014 13:41:38 GMT'
+            Content-Type: 'application/json; charset=utf-8'
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            X-Backend: mix
+        body: '[{"browser_short_version": "26", "video_url": "https://assets.saucelabs.com/jobs/3a4136e1bb6f4f6b8cae6fbd0bf2e6aa/video.flv", "creation_time": 1405082632, "custom-data": null, "browser_version": "26.0.1410.43.", "owner": "behat-seed", "id": "3a4136e1bb6f4f6b8cae6fbd0bf2e6aa", "log_url": "https://assets.saucelabs.com/jobs/3a4136e1bb6f4f6b8cae6fbd0bf2e6aa/selenium-server.log", "build": null, "passed": null, "public": null, "status": "complete", "tags": [], "start_time": 1405082632, "proxied": false, "commands_not_successful": 0, "name": "Behat See", "end_time": 1405082637, "error": null, "os": "Windows 2012", "breakpointed": null, "browser": "googlechrome"}, {"browser_short_version": "26", "video_url": "https://assets.saucelabs.com/jobs/1cde7b77e8744ff5b6198489ceffce81/video.flv", "creation_time": 1405082159, "custom-data": null, "browser_version": "26.0.1410.43.", "owner": "behat-seed", "id": "1cde7b77e8744ff5b6198489ceffce81", "log_url": "https://assets.saucelabs.com/jobs/1cde7b77e8744ff5b6198489ceffce81/selenium-server.log", "build": null, "passed": null, "public": null, "status": "complete", "tags": [], "start_time": 1405082159, "proxied": false, "commands_not_successful": 6, "name": "Behat See", "end_time": 1405082178, "error": "User terminated", "os": "Windows 2012", "breakpointed": null, "browser": "googlechrome"}, {"browser_short_version": "26", "video_url": "https://assets.saucelabs.com/jobs/79bd34f42d584da6ad59c051388134d9/video.flv", "creation_time": 1400864176, "custom-data": {"foo": "bar"}, "browser_version": "26.0.1410.43.", "owner": "behat-seed", "id": "79bd34f42d584da6ad59c051388134d9", "log_url": "https://assets.saucelabs.com/jobs/79bd34f42d584da6ad59c051388134d9/selenium-server.log", "build": null, "passed": true, "public": "public", "status": "complete", "tags": ["@tag1"], "start_time": 1400864176, "proxied": false, "commands_not_successful": 2, "name": "Test Update", "end_time": 1400864188, "error": null, "os": "Windows 2012", "breakpointed": null, "browser": "googlechrome"}]'

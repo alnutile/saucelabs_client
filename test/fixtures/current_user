@@ -2,7 +2,7 @@
 -
     request:
         method: GET
-        url: 'https://saucelabs.com/rest/v1/users/behat-seed'
+        url: 'https://saucelabs.com/rest/v1/users/api-test-user'
         headers:
             Host: saucelabs.com
             Accept: application/vnd.SauceLabs.beta+json
@@ -20,5 +20,52 @@
             Cache-Control: no-cache
             X-FRAME-OPTIONS: DENY
             Set-Cookie: 'csrf_token=8407d8490288acef50378002ef3bbb5f; expires="Fri, 11-Jul-2014 10:19:34 GMT"; Max-Age=600; Path=/; secure; HttpOnly'
+            Content-Length: '293'
+        body: '{"mac_manual_minutes": 30, "user_type": "free", "manual_minutes": 30, "can_run_manual": true, "id": "api-test-user", "access_key": "password", "name": "Alfred Nutile", "subscribed": false, "minutes": 166, "mac_minutes": 120, "email": "me+api-test-user@alfrednutile.info"}'
+-
+    request:
+        method: GET
+        url: 'https://saucelabs.com/rest/v1/users/api-test-user'
+        headers:
+            Host: saucelabs.com
+            Accept: application/vnd.SauceLabs.beta+json
+            User-Agent: 'php-github-api (http://github.com/alnutile/saucelabs_client)'
+            Authorization: 'Basic YXBpLXRlc3QtdXNlcjpwYXNzd29yZA=='
+            Content-Length: '0'
+    response:
+        status: 401
+        headers:
+            Server: nginx
+            Date: 'Fri, 11 Jul 2014 13:24:19 GMT'
+            Content-Type: application/json
+            Connection: keep-alive
+            WWW-Authenticate: 'Basic realm="Sauce"'
+            Pragma: no-cache
+            Cache-Control: no-cache
+            X-FRAME-OPTIONS: DENY
+            Set-Cookie: 'metrics=0d506658f7b80f78b82bc0f336207faede03a5ef79f0d749326b46dfbcd8e5b29cc926ce; Domain=.saucelabs.com; httponly; Path=/'
+            Content-Length: '57'
+        body: '{"error": "Unauthorized; invalid access key or password"}'
+-
+    request:
+        method: GET
+        url: 'https://saucelabs.com/rest/v1/users/behat-seed'
+        headers:
+            Host: saucelabs.com
+            Accept: application/vnd.SauceLabs.beta+json
+            User-Agent: 'php-github-api (http://github.com/alnutile/saucelabs_client)'
+            Authorization: 'Basic YmVoYXQtc2VlZDpmYzViNjg4YS1mMjdjLTRjNzMtYTkxNC1lYjVkN2UyY2RmMWU='
+            Content-Length: '0'
+    response:
+        status: 200
+        headers:
+            Server: nginx
+            Date: 'Fri, 11 Jul 2014 13:41:36 GMT'
+            Content-Type: application/json
+            Connection: keep-alive
+            Pragma: no-cache
+            Cache-Control: no-cache
+            X-FRAME-OPTIONS: DENY
+            Set-Cookie: 'csrf_token=a3b733461749c2cfff25bb8aa30e23ff; expires="Fri, 11-Jul-2014 13:51:36 GMT"; Max-Age=600; Path=/; secure; HttpOnly'
             Content-Length: '293'
         body: '{"mac_manual_minutes": 30, "user_type": "free", "manual_minutes": 30, "can_run_manual": true, "id": "behat-seed", "access_key": "fc5b688a-f27c-4c73-a914-eb5d7e2cdf1e", "name": "Alfred Nutile", "subscribed": false, "minutes": 166, "mac_minutes": 120, "email": "me+behat-seed@alfrednutile.info"}'

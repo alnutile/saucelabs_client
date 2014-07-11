@@ -11,13 +11,12 @@ namespace SauceLabs\Tests;
 use \Mockery as m;
 use Dotenv;
 
-\Dotenv::load(__DIR__.'/../../../');
+\Dotenv::load(__DIR__.'/../../');
 
 use SauceLabs\Client;
-use SauceLabs\Tests\BaseTest as Base;
 use VCR\VCR;
 
-class ProviderInformation extends Base {
+class ProviderInformation extends BaseTest {
 
     protected function tearDown()
     {

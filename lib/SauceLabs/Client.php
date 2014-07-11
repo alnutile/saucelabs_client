@@ -92,6 +92,10 @@ class Client
                 $api = new Api\TestActivityAndUsage($this);
                 break;
 
+            case 'assets':
+                $api = new Api\Assets($this);
+                break;
+
             case 'jobs':
                 $api = new Api\Jobs($this);
                 break;

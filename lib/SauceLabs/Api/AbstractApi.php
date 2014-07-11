@@ -56,6 +56,20 @@ abstract class AbstractApi implements ApiInterface
         return $this;
     }
 
+    public function buildParams($params)
+    {
+        if(!empty($params)) {
+            foreach($params as $key => $value) {
+                $params_query[] = "$key=$value";
+            }
+            $params = implode('&', $params_query);
+            $params = '?' . $params;
+        } else {
+            $params = '';
+        }
+        return $params;
+    }
+
     /**
      * Send a GET request with query parameters.
      *
