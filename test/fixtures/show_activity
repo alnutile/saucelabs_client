@@ -1,0 +1,21 @@
+
+-
+    request:
+        method: GET
+        url: 'https://saucelabs.com/rest/v1/behat-seed/activity'
+        headers:
+            Host: saucelabs.com
+            Accept: application/vnd.SauceLabs.beta+json
+            User-Agent: 'php-github-api (http://github.com/alnutile/saucelabs_client)'
+            Authorization: 'Basic YmVoYXQtc2VlZDpmYzViNjg4YS1mMjdjLTRjNzMtYTkxNC1lYjVkN2UyY2RmMWU='
+            Content-Length: '0'
+    response:
+        status: 200
+        headers:
+            Server: nginx
+            Date: 'Fri, 11 Jul 2014 10:36:38 GMT'
+            Content-Type: application/json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            X-Backend: mix
+        body: "{\"subaccounts\": {\"behat-seed\": {\"in progress\": 0, \"all\": 0, \"queued\": 0}}, \"totals\": {\"in progress\": 0, \"all\": 0, \"queued\": 0}}\n"

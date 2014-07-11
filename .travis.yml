@@ -1,0 +1,12 @@
+language: php
+
+php:
+  - 5.4
+
+before_script:
+  - "mkdir -p ~/.composer"
+  - composer self-update
+  - composer install
+  
+script:
+  - bin/phpunit --coverage-text
